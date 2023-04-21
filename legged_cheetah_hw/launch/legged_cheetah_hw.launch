@@ -1,0 +1,17 @@
+
+<launch>
+    <arg name="robot_type" default="cheetah" />
+
+    <param name="legged_robot_description" command="$(find xacro)/xacro $(find legged_cheetah_description)/urdf/robot.xacro
+       robot_type:=$(arg robot_type)
+    "/>
+    <node name="generate_urdf" pkg="legged_common" type="generate_urdf.sh" output="screen"
+          args="$(find legged_cheetah_description)/urdf/robot.xacro $(arg robot_type)"/>
+
+    <rosparam file="$(find legged_cheetah_hw)/config/$(arg robot_type).yaml" command="load"/>
+
+    <param name="robot_type" value="$(arg robot_type)"/>
+    <node name="legged_cheetah_hw" pkg="legged_cheetah_hw" type="legged_cheetah_hw" respawn="false"
+          clear_params="true"/>
+
+</launch>
