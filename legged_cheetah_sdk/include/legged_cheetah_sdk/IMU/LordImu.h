@@ -1,6 +1,7 @@
 #ifndef _LEGGED_CHEETAH_SDK_LORDIMU_H_
 #define _LEGGED_CHEETAH_SDK_LORDIMU_H_
 
+#include "legged_cheetah_sdk/IMU/mip_sdk.h"
 #include "legged_cheetah_sdk/Support/Types.h"
 
 #include <cstdint>

@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>legged_cheetah_hw</name>
+  <name>legged_cheetah_sdk</name>
   <version>0.0.0</version>
-  <description>The legged_cheetah_hw package</description>
+  <description>The legged_cheetah_sdk package</description>
+
   <maintainer email="todo@todo.todo">xiaoxiao</maintainer>
   <license>TODO</license>
 
@@ -10,7 +11,6 @@
   <build_depend>roscpp</build_depend>
   <build_export_depend>roscpp</build_export_depend>
   <exec_depend>roscpp</exec_depend>
-  <depend>legged_hw</depend>
-  <depend>legged_cheetah_sdk</depend>
+
 
 </package>

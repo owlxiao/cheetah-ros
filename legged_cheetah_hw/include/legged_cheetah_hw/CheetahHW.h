@@ -1,7 +1,7 @@
 #ifndef _LEGGED_CHEETAH_HW_CHEETAHHW_H_
 #define _LEGGED_CHEETAH_HW_CHEETAHHW_H_
 
-#include "legged_cheetah_sdk/IMU/LordIMU.h"
+#include "legged_cheetah_sdk/IMU/LordImu.h"
 
 #include <legged_hw/LeggedHW.h>
 

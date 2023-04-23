@@ -1,6 +1,6 @@
 #include "legged_cheetah_hw/CheetahHW.h"
 
-#include "legged_cheetah_sdk/IMU/LordIMU.h"
+#include "legged_cheetah_sdk/IMU/LordImu.h"
 #include "legged_cheetah_sdk/Quadruped/Cheetah.h"
 
 #include "legged_common/hardware_interface/ContactSensorInterface.h"
